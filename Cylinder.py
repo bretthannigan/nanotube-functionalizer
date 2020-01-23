@@ -26,6 +26,7 @@ class Cylinder:
         self._V = ns[:,1]
         
 class CylinderFit(Cylinder):
+    ''' References: [1] D. Eberly, “Least Squares Fitting of Data by Linear or Quadratic Structures.” Geometric Tools, ch. 7, pp. 38–51, 2019.'''
     def __init__(self, X=None, *args, **kwargs):
         self.X = X
         super().__init__(*args, **kwargs)
