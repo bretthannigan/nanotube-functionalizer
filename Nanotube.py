@@ -124,8 +124,3 @@ class Nanotube:
         atoms = file_data['a'].tolist()
         geom = (np.hstack((file_data['x'][:,np.newaxis], file_data['y'][:,np.newaxis], file_data['z'][:,np.newaxis])))*conversion
         return atoms, geom
-
-n = Nanotube()
-n.fromXYZ('./60CNT-12_exact.xyz')
-n.functionalize('C:\\Users\\bchannig\\Documents\\Orca\\Functionalized Nanotube Modelling\\Molecules\\Functional Groups\\NH2.xyz', 0.1)
-n.toXYZ('60CNT-12-10wwNH2_exact.xyz')
