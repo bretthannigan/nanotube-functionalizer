@@ -1,3 +1,5 @@
+![Nanotube Functionalizer](img/title.png?raw=true "Nanotube Functionalizer")
+
 # nanotube-functionalizer
 Adds functional groups to carbon nanotube geometries.
 
@@ -19,7 +21,13 @@ There are many tools for generating carbon nanotube (CNT) structures for modelli
 
 ## Usage
 1. Obtain a nanotube geometry using your favourite software and export in XYZ format. E.g. Avogadro's nanotube builder.
+
+![Example carbon nanotube geometry](img/cnt.png?raw=true "Example carbon nanotube geometry")
+        
 2. Generate a geometry for the functional group of interest and also export in XYZ format. Note where the axes align relative to the functional group.
+
+![Example functional group geometry](img/nh2.png?raw=true "Example functional group geometry")
+        
 3. In your script, generate a `Nanotube` object from the XYZ file:
 
         import Nanotube
@@ -49,5 +57,9 @@ There are many tools for generating carbon nanotube (CNT) structures for modelli
       
         n.toXYZ('<PATH_TO_OUTPUT>.xyz')
 
+6. View the output in a molecular editor.
+
+![Example functionalized CNT](img/cnt-nh2.png?raw=true "Example functionalized CNT")
+        
 ## References
 [1] D. Eberly, “Least Squares Fitting of Data by Linear or Quadratic Structures.” Geometric Tools, ch. 7, pp. 38–51, 2019.
