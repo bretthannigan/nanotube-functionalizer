@@ -30,7 +30,7 @@ There are many tools for generating carbon nanotube (CNT) structures for modelli
         
 3. In your script, generate a `Nanotube` object from the XYZ file:
 
-        import Nanotube
+        from Nanotube import Nanotube
         n = Nanotube()
         n.fromXYZ(xyz_path='<PATH_TO_CNT>.xyz', \
                   unit='angstrom')
@@ -55,7 +55,7 @@ There are many tools for generating carbon nanotube (CNT) structures for modelli
     6. `origin`: an offset for the functional group origin.
 5. Write the result to an XYZ file:
       
-        n.toXYZ('<PATH_TO_OUTPUT>.xyz')
+        n.toXYZ('<PATH_TO_OUT>.xyz')
 
 6. View the output in a molecular editor.
 
